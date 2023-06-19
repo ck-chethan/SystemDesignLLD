@@ -1,12 +1,18 @@
 package com.lld.bookmyshow.models;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.ManyToOne;
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
+@Entity
+
 public class ShowSeatType extends BaseModel {
+    @ManyToOne
     private Show show;
-    private Seat seat;
-    private SeatStatus status;
+    private double price;
+    @ManyToOne
+    private SeatType seatType;
 }

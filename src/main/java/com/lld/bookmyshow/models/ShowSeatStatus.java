@@ -1,6 +1,6 @@
 package com.lld.bookmyshow.models;
 
-public enum SeatStatus {
+public enum ShowSeatStatus {
     AVAILABLE,
     BOOKED,
     BLOCKED,
